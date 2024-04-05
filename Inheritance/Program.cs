@@ -19,9 +19,36 @@ namespace Inheritance
             // Create a class Reptile
             // give this class 4 members that are specific to Reptile
             // Set this class to inherit from your Animal Class
+            var redRobin = new Bird()
+            {
+                BeakSize = "4 inches",
+                WingSpan = 12,
+                Height = 6,
+                Color = "Red",
+                Legs = 2,
+                BodySize = "Tiny",
+                MaleOrFemale = "Female",
+                Age = 5 
 
 
+            };
+            redRobin.Details();
+            Console.WriteLine("------------------------------");
 
+
+            var boa = new Reptile()
+            {
+                HasClaws = false,
+                HasScales = false,
+                Weight = 100,
+                ColdBlooded = "Yes",
+                Legs = 0,
+                BodySize = "Extra Large",
+                MaleOrFemale = "Male",
+                Age = 8
+            };
+            boa.RepDetails();
+            
 
             /*Create an object of your Bird class
              *  give values to your members using the object of your Bird class
